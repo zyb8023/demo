@@ -1,0 +1,4 @@
+@import "mixins";
+.box {
+    @include opcity(20)
+}
