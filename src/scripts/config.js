@@ -4,10 +4,8 @@ requirejs.config({
 	paths : {
 		"jquery" : "libs/jquery.min",
 		"swiper" : "libs/swiper.min",
+		"bootstrap":"libs/bootstrap.min",
 		"common" : "common",
-		"fontscroll" : "fontscroll",
-		"a" : "a",
-		"b" : "b",
-		"fadajing": "fadajing"
+		
 	}
 });
