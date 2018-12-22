@@ -1,0 +1,348 @@
+@import "_flex"; //导入的弹性盒兼容插件
+@import "reset"; //导入的公共样式
+@import "iconfont";
+.margin {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+div#main {
+    div.main-left {
+        float: left;
+        div.goodsMsg {
+            width: 720px;
+            h4.title {
+                font: 12px/18px "";
+                color: #cdcdcd;
+                padding: 12px 0 5px 0;
+                a {
+                    color: #999999;
+                }
+            }
+            div.details {
+                div.show {
+                    width: 350px;
+                    height: 350px;
+                    float: left;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .swiper-pagination {
+                        margin-top: 15px;
+                        span {
+                            border: none;
+                            background: 0;
+                            outline: 0;
+                            opacity: 1;
+                        }
+                    }
+                    .swiper-pagination-bullet {
+                        width: 20%;
+                        height: 70px;
+                        border-radius: 0;
+                        background: 0;
+                        border: 1px solid #333;
+                        padding: 5px;
+                    }
+                    .swiper-pagination .my-bullet-active {
+                        border: 1px solid #333333;
+                    }
+                    .swiper-button-prev {
+                        position: absolute;
+                        left: -21px;
+                        top: 412px;
+                        width: 25px;
+                        height: 20px;
+                        outline: 0;
+                    }
+                    .swiper-button-next {
+                        position: absolute;
+                        right: -21px;
+                        top: 412px;
+                        width: 25px;
+                        height: 20px;
+                        outline: 0;
+                    }
+                }
+                div.msg {
+                    float: left;
+                    margin-left: 40px;
+                    a.like {
+                        display: block;
+                        b {
+                            font-size: 18px;
+                        }
+                        span {
+                            font: 16px/21px "";
+                        }
+                    }
+                    h3.shopName {
+                        font: 24px/36px "微软雅黑";
+                        margin-top: 10px;
+                        color: #878787;
+                    }
+                    h4.goodName {
+                        font: 20px/26px "";
+                        width: 325px;
+                        color: #333333;
+                    }
+                    div.price {
+                        i {
+                            font: 12px/26px "";
+                            color: #b2b2a5;
+                        }
+                        b {
+                            font: 16px/26px "";
+                            color: #1083ff;
+                        }
+                    }
+                    div.service {
+                        padding-left: 40px;
+                        margin-top: 30px;
+                        p {
+                            float: left;
+                            font: 12px/2 "";
+                            text-indent: 17px;
+                        }
+                        p:nth-child(1) {
+                            background: url("https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/24/24690.png") no-repeat left;
+                            background-size: 14px 14px;
+                        }
+                        p:nth-child(2) {
+                            background: url("https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/24/24689.png") no-repeat left;
+                            background-size: 13px 14px;
+                            margin-left: 4px;
+                        }
+                    }
+                    div.goodscolor {
+                        margin-top: 10px;
+                        i {
+                            float: left;
+                            margin-top: 22px;
+                            color: #b2b2a5;
+                        }
+                        div.colorList {
+                            margin-left: 6px;
+                            float: left;
+                            width: 264px;
+                            @include flexbox;
+                            @include flex-wrap(wrap);
+                            div {
+                                cursor: pointer;
+                                padding: 5px;
+                                img {
+                                    display: block;
+                                    width: 34px;
+                                    height: 34px;
+                                    margin: 0 auto;
+                                }
+                            }
+                            .click{
+                                    border: 1px solid #333333;
+                                }
+                        }
+                    }
+                    div.count {
+                        padding: 20px 0;
+                        i {
+                            color: #b2b2a5;
+                        }
+                        a {
+                            display: inline-block;
+                        }
+                        a.jian {
+                            width: 13px;
+                            height: 13px;
+                            background: url("https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/24/24748.png") no-repeat center;
+                            background-size: 13px 13px;
+                            cursor: pointer;
+                        }
+                        a.jia {
+                            width: 13px;
+                            height: 13px;
+                            background: url("https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/24/24750.png") no-repeat center;
+                            background-size: 13px 13px;
+                            cursor: pointer;
+                        }
+                        span {
+                            display: inline-block;
+                            width: 54px;
+                            height: 26px;
+                            border: 1px solid #EEEEEE;
+                            text-align: center;
+                            font: 16px/26px "";
+                            margin: 0 5px;
+                        }
+                    }
+                    div.coon {
+                        a {
+                            display: block;
+                            width: 330px;
+                            height: 42px;
+                            font: 18px/42px "";
+                            background: #000;
+                            color: #fff;
+                            text-align: center;
+                        }
+                    }
+                    div.add {
+                        width: 330px;
+                        padding: 10px 0;
+                        a {
+                            width: 162px;
+                            height: 34px;
+                            border: 1px solid #000;
+                            font: 14px/34px "";
+                            text-align: center;
+                            cursor: pointer;
+                            color: #000;
+                        }
+                        a.addCar {
+                            float: left;
+                            background: url("https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/24/24749.png") no-repeat 38px;
+                            background-size: 15px 15px;
+                            text-indent: 23px;
+                        }
+                        a.share {
+                            float: right;
+                            background: url("https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/24/24746.png") no-repeat 38px;
+                            background-size: 15px 15px;
+                        }
+                    }
+                }
+            }
+        }
+        div.goodsShow {
+            width: 720px;
+            margin-top: 60px;
+            img {
+                width: 100%;
+            }
+        }
+        
+        //加入购物车的蒙版
+        #addCarSuccess{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: rgba(0,0,0,0.5);
+            z-index: 100;
+            display: none;
+            div.pop{
+                width: 433px;
+                height: 127px;
+                background: #efefef;
+                border-radius: 5px;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                overflow: hidden;
+                h3{
+                    width: 433px;
+                    height: 33px;
+                    background: #282322 url("https://imgs-qn.iliangcang.com/images/default/pop_bg_header.png") no-repeat left;
+                    overflow: hidden;
+                    span{
+                        float: right;
+                        width: 33px;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                }
+                p{
+                    font: 14px/94px "";
+                    text-align: center;
+                    color: #333333;
+                }
+            }
+        }
+    }
+    div.main-right {
+        float: right;
+        padding-top: 30px;
+        h3.title {
+            font: 900 12px/38px "";
+        }
+        ul {
+            li {
+                padding-bottom: 35px;
+                a {
+                    display: block;
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                    p {
+                        font: 12px/40px "";
+                        color: #333;
+                    }
+                }
+                h4 {
+                    font-size: 14px;
+                    color: #999999;
+                }
+                span {
+                    font: 14px/36px "";
+                    color: #31a0f6;
+                }
+            }
+        }
+    }
+}
+
+div.guide {
+    padding-top: 20px;
+    div.jianjie {
+        h3 {
+            font: 18px/64px "微软雅黑";
+            color: #262626;
+            background: url("https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/24/24830.png") no-repeat left;
+            background-size: 20px 20px;
+            text-indent: 26px;
+        }
+        p {
+            width: 720px;
+            font: 12px/24px "";
+            color: #333333;
+        }
+    }
+    div.shopGuide {
+        margin-top: 30px;
+        h3 {
+            font: 18px/44px "微软雅黑";
+            color: #262626;
+            background: url("https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/24/24829.png") no-repeat left;
+            background-size: 20px 20px;
+            text-indent: 26px;
+        }
+        p{
+            font: 12px/34px "";
+            color: #333333;
+        }
+    }
+    i.shouHou{
+        position: relative;
+        &:hover .clause{
+            display: block;
+        }
+        div.clause{
+            width: 652px;
+            height: 555px;
+            position: absolute;
+            bottom: 34px;
+            left: 0;
+            border-radius: 5px;
+            display: none;
+            background: #007AFF;
+            opacity: 0.3;
+        }
+    }
+}

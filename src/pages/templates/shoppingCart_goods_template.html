@@ -1,0 +1,32 @@
+<script type="text/html" id="cartList">
+    <thead>
+        <th>
+            <input type="checkbox" value="" /> 全选
+        </th>
+        <th>良品</th>
+        <th>数量</th>
+        <th>单价(元)</th>
+        <th>小计(元)</th>
+        <th>操作</th>
+    </thead>
+    <% for(var i=0; i<list.length; i++) { %>
+        <tr  index="<%=list[i].skuid%>">
+            <td>
+                <input type="checkbox" value="" />
+                <img src="<%=list[i].img%>" alt="" />
+            </td>
+            <td><%=list[i].name%></td>
+            <td class="quantity">
+                <a href="#" class="jian">-</a>
+                <span><%=cookList[i].num%></span>
+                <a href="#" class="jia">+</a>
+            </td>
+            <td class="total"><%=list[i].skuprice%></td>
+            <td class="subtotal"><%=cookList[i].price*cookList[i].num%></td>
+            <td>
+                <em class="deltel">删除</em>
+            </td>
+        </tr>
+    </tbody>
+    <%}%>
+</script>

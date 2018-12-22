@@ -1,0 +1,25 @@
+<!--热门商品数据-->
+<script type="text/html" id="goodsList">
+	<% for( var i=0; i<goodsList.length; i++) { %>
+			<li>
+				<div class="imgCon">
+					<img src="<%=goodsList[i].img %>" alt="" />
+					<a href="http://localhost:8000/pages/goodsDetails.html?userid=<%=goodsList[i].skuid %>">
+						<span><%=goodsList[i].skuprice %></span>
+						<h3><%=goodsList[i].name %></h3>
+						<p>绿衣-青年雕塑家杨洋作品 | 法国总统Macron的收藏作</p>
+					</a>
+				</div>
+				<div class="bar clear">
+					<a href="#" class="who">
+						<img src="../static/images/who.png" alt="" />
+						<i><%=goodsList[i].name %></i>
+					</a>
+					<a href="#" class="like">627 <b class="iconfont icon-xiangqu"></b></a>
+				</div>
+				</li>	
+	<% } %>
+</script>
+
+
+

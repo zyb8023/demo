@@ -1,0 +1,13 @@
+<script type="text/html" id="goodsLikeList">
+	<% for(var i=0; i<3; i++){%>
+		<li>
+			<a href="http://localhost:8000/pages/goodsDetails.html?userid=<%=likeList[i].skuid %>">
+				<img src="<%=likeList[i].img%>" alt="" />
+				<p><%=likeList[i].name%></p>
+			</a>
+			<h4>Space 18</h4>
+			<span><%=likeList[i].skuprice%></span>
+		</li>
+	<%}%>
+
+</script>

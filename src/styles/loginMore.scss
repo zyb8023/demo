@@ -1,0 +1,108 @@
+@import "reset";
+@import "_flex"; //导入的弹性盒兼容插件
+@import "iconfont";
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #999999;
+}
+
+#bg {
+    overflow: hidden;
+    ul {
+        width: 300px;
+        margin: 320px auto 0;
+        text-align: center;
+        li{
+            margin: 10px 0;
+        }
+        li.logo {
+            padding-bottom: 20px;
+        }
+        li.user {
+            background: #CCCCCC;
+            s {
+                float: left;
+                width: 35px;
+                height: 50px;
+                background: url(https://imgs-qn.iliangcang.com/images/default/usericon.png) no-repeat left;
+                margin-left: 10px;
+            }
+            .userInput {
+                @extend .input;
+            }
+        }
+        li.password {
+            background: #CCCCCC;
+            s {
+                float: left;
+                width: 35px;
+                height: 50px;
+                background: url(https://imgs-qn.iliangcang.com/images/default/passicon.png) no-repeat left;
+                margin-left: 10px;
+            }
+            .pwdinput {
+                @extend .input;
+            }
+        }
+        li.loginAuto {
+            color: #FFFFFF;
+            .checkInput {
+                float: left;
+            }
+            span {
+                float: left;
+                margin: 3px 0 0 15px;
+            }
+            a.forgetPwd {
+                float: right;
+                margin-top: 3px;
+                color: #FFFFFF;
+            }
+        }
+        li.loginbtn {
+            .loginInput {
+                width: 300px;
+                height: 50px;
+                border: 0;
+                background: #25292e;
+                font: 900 18px/50px "";
+                color: #ffffff;
+            }
+        }
+        li.moreLoginIcon {
+            padding-top: 20px;
+            div.loginIcon {
+                float: left;
+                a{
+                    font: 20px/24px "";
+                    color: #CCCCCC;
+                    &:hover{
+                        color: #EBEBEB;
+                    }
+                }
+            }
+            a.reigst{
+                float: right;
+                font: 16px/24px "";
+                border-bottom: 1px solid #CCCCCC;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+//输入框的公共样式
+.input {
+    float: left;
+    border: 0;
+    border-left: 1px solid #ffffff;
+    background: none;
+    font: 14px/30px "";
+    color: #FFFFFF;
+    padding: 0 5px;
+    width: 255px;
+    margin-top: 10px;
+    outline: medium;
+}

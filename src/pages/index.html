@@ -1,176 +1,79 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8" />
-		<title>良仓</title>
-	</head>
-	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="../styles/swiper.min.css" />
-	<link rel="stylesheet" type="text/css" href="../styles/index.css" />
+<head>
+	<meta charset="utf-8" />
+	<title>良仓</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../styles/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="../styles/index.css" />
 
-	<body>
-		<!--头部信息-->
-		<header>
-			<div class="margin clear">
-				<a href="#" class="logo"><img src="../static/images/logo.png" alt="加载失败" title="logo" /></a>
-				<div class="header-r">
-					<span>
-						<i class="login">登录</i>
-						<i class="register">注册</i>
-					</span>
-					<b>|</b>
-					<span class="shopCar">
-						购物车
-						<!--购物车下拉菜单-->
-						<div class="shopCarList">
-							<p>你的购物车暂时没有商品...</p>
-							<p>快去抢购良仓商品吧！</p>
-						</div>
-					</span>
-					<b>|</b>
-					<span class="msg">
-						消息
-						<!--消息下拉菜单-->
-						<div class="msgList">
-							<a href="#">动态<s>0</s></a>
-							<a href="#">评论<s>0</s></a>
-							<a href="#">私信<s>0</s></a>
-							<a href="#">粉丝<s>0</s></a>
-							<a href="#">喜欢<s>0</s></a>
-							<a href="#">通知<s>0</s></a>
-						</div>
-					</span>
-					<b>|</b>
-					<span>添加良品</span>
-				</div>
+<body>
+	<div id="header"></div>
+	<div id="banner" class="margin">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../static/images/banner_1.png" /></div>
+				<div class="swiper-slide"><img src="../static/images/banner_2.jpg" /></div>
+				<div class="swiper-slide"><img src="../static/images/banner_3.jpg" /></div>
 			</div>
-		</header>
-		<nav class="margin clear">
-			<ul class="navTitle">
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<!--分页器-->
+		<div class="swiper-pagination"></div>
+		<!--导航按钮-->
+	</div>
+	<!--页面主体-->
+	<div id="main" class="margin">
+		<!--商品赏析-->
+		<div class="enjoy">
+			<ul>
 				<li>
-					<a href="#" class="active homepage">首页</a>
-				</li>
-				<li class="subli shop">
-					<a href="#">商店</a>
-					<!--商店下拉菜单开始-->
-					<div class="shopList">
-						<div class="storeLeft">
-							<dl>
-								<dd>
-									<img src="../static/images/23687.png" alt="" />
-									<a href="#">商品</a>
-								</dd>
-								<dd>
-									<img src="../static/images/23687.png" alt="" />
-									<a href="#">商品</a>
-								</dd>
-								<dd>
-									<img src="../static/images/23687.png" alt="" />
-									<a href="#">商品</a>
-								</dd>
-								<dd>
-									<img src="../static/images/23687.png" alt="" />
-									<a href="#">商品</a>
-								</dd>
-								<dd>
-									<img src="../static/images/23687.png" alt="" />
-									<a href="#">商品</a>
-								</dd>
-								<dd>
-									<img src="../static/images/23687.png" alt="" />
-									<a href="#">商品</a>
-								</dd>
-								<dd>
-									<img src="../static/images/23687.png" alt="" />
-									<a href="#">商品</a>
-								</dd>
-								<dd>
-									<img src="../static/images/23687.png" alt="" />
-									<a href="#">商品</a>
-								</dd>
-								<dd>
-									<img src="../static/images/23687.png" alt="" />
-									<a href="#">商品</a>
-								</dd>
-							</dl>
-							<div class="checkAllShop">
-								<a href="#">查看所有品牌&gt;</a>
-								<a href="#">最新到货&gt;</a>
-							</div>
-						</div>
-						<div class="storeRight">
-							<a href="#">
-								<img src="../static/images/315574.jpg" alt="新视线" title="新视线" />
-								<p>新视线：2018-12-10</p>
-							</a>
-						</div>
-					</div>
-					<!--商店下拉菜单结束-->
-				</li>
-				<li class="subli magazine">
-					<a href="#">杂志</a>
-					<!--杂志的下拉菜单开始-->
-					<div class="magazineMsg">
-						<div class="magazineList">
-							<a href="#">趣物</a>
-							<a href="#">数码</a>
-							<a href="#">趣物</a>
-							<a href="#">数码</a>
-							<a href="#">趣物</a>
-							<a href="#">数码</a>
-							<a href="#">趣物</a>
-							<a href="#">数码</a>
-							<a href="#">趣物</a>
-						</div>
-					</div>
-					<!--杂志的下拉菜单结束-->
-				</li>
-				<li class="subli share">
-					<a href="#">分享</a>
-					<div class="shareMsg">
-						<!--分享下拉菜单-->
-						<div class="shareList">
-							<a href="#">趣物</a>
-							<a href="#">数码</a>
-							<a href="#">趣物</a>
-							<a href="#">数码</a>
-							<a href="#">趣物</a>
-							<a href="#">数码</a>
-							<a href="#">趣物</a>
-							<a href="#">数码</a>
-							<a href="#">趣物</a>
-						</div>
-						<!--分享二级菜单结束-->
-					</div>
+					<h3><img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/32/32022.png" /></h3>
+					<h3><img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/32/32023.png" /></h3>
 				</li>
 				<li>
-					<a href="#">达人</a>
+					<h4><img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/32/32025.png" /></h4>
+				</li>
+				<li>
+					<h3><img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/32/32024.png" /></h3>
+					<h3><img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/32/32026.png" /></h3>
 				</li>
 			</ul>
-			<!--搜索框-->
-			<div class="search-input clear">
-				<input type="text" name="" class="txt" value="" placeholder="search..." />
-				<input type="button" name="" class="btn" value="" />
-			</div>
-			<!--可以让输入框show和hide 的按钮-->
-			<b class="noOffmenu"></b>
-		</nav>
-		<div id="banner" class="margin">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="../static/images/banner_1.png" /></div>
-					<div class="swiper-slide"><img src="../static/images/banner_2.jpg" /></div>
-					<div class="swiper-slide"><img src="../static/images/banner_3.jpg" /></div>
-				</div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-			</div>
-			<!--分页器-->
-			<div class="swiper-pagination"></div>
-			<!--导航按钮-->
 		</div>
-	</body>
-	<script type="text/javascript" src="../scripts/libs/require.js" data-main="index.js"></script>
-
+		<!--热门商品-->
+		<div class="hot">
+			<div class="title">
+				<span>人气良品</span>
+			</div>
+			<div class="hotGoods">
+				<ul class="hotGoodsList clear">
+					<!-- <li>
+						<div class="imgCon">
+							<img src="../static/images/shopDemo.png" alt="" />
+							<a href="#">
+								<span>￥90000</span>
+								<h3>杨洋作品 | 法国总统Macron的收藏作</h3>
+								<p>绿衣-青年雕塑家杨洋作品 | 法国总统Macron的收藏作</p>
+							</a>
+						</div>
+						<div class="bar clear">
+							<a href="#" class="who">
+								<img src="../static/images/who.png" alt="" />
+								<i>北京J.W空间</i>
+							</a>
+							<a href="#" class="like">627 <b class="iconfont icon-xiangqu"></b></a>
+						</div>
+					</li> -->
+				</ul>
+				<!--bootstrap生成加载更多按钮-->
+				<a href="#" class="loadmore">more</a>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</body>
+<script type="text/javascript" src="../scripts/libs/require.js" data-main="index.js"></script>
 </html>

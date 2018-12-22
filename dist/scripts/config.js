@@ -1,1 +1,1 @@
-"use strict";requirejs.config({baseUrl:"../scripts/",paths:{jquery:"libs/jquery.min",swiper:"libs/swiper.min",bootstrap:"libs/bootstrap.min",common:"common"}});
+"use strict";requirejs.config({baseUrl:"../scripts/",paths:{jquery:"libs/jquery.min",swiper:"libs/swiper.min",bootstrap:"libs/bootstrap.min",template:"libs/template-web",common:"common","jquery.code":"libs/jquery.code","jquery.cookie":"libs/jquery.cookie"}});

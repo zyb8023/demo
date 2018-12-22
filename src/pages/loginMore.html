@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>更多登录方式</title>
+		<link rel="stylesheet" href="../styles/bootstrap.css" />
+		<link rel="stylesheet" href="../styles/loginMore.css" />
+	</head>
+
+	<body>
+		<div id="bg">
+			<ul>
+				<li class="logo">
+					<a href="#">
+						<img src="https://www.iliangcang.com/images/default/logo_icon.png" alt="" title="良仓" />
+					</a>
+				</li>
+				<li class="user clear">
+					<s class="userLogo"></s>
+					<input type="text" class="userInput" placeholder="用户名/邮箱/手机号" />
+				</li>
+				<li class="password clear">
+					<s class="pwdLogo"></s>
+					<input type="password" name="" class="pwdinput" placeholder="密码" />
+				</li>
+				<li class="loginAuto clear">
+					<input class="checkInput" type="checkbox"  value="loginAuto" checked />
+					<span>自动登录</span>
+					<a href="#" class="forgetPwd">忘记密码?</a>
+				</li>
+				<li class="loginbtn clear">
+					<input type="button" class="loginInput" value="登录良仓" />
+				</li>
+				<li class="moreLoginIcon clear">
+					<div class="loginIcon">
+						<a href="#" class="qq iconfont icon-QQ"></a>
+						<a href="#" class="weibo iconfont icon-weibo"></a>
+						<a href="#" class="douban iconfont icon-douban"></a>
+						<a href="#" class="qqWeibo iconfont icon-tengxunweibo"></a>
+					</div>
+					<a href="http://localhost:8000/pages/register.html" class="reigst">注册良仓</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="../scripts/libs/require.js" data-main="loginMore.js"></script>
+</html>

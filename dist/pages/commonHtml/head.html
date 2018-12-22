@@ -1,0 +1,124 @@
+<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../styles/commonHtml.css" />
+	<!--头部信息-->
+<div class="allpage">
+		<header>
+		<div class="margin clear">
+			<a href="#" class="logo"><img src="../static/images/logo.png" alt="加载失败" title="logo" /></a>
+			<div class="header-r">
+				<span>
+					<a href="http://localhost:8000/pages/login.html" class="login">登录</a>
+					<a href="http://localhost:8000/pages/register.html" class="register">注册</a>
+				</span>
+				<b>|</b>
+				<span class="shopCar">
+					<a href="http://localhost:8000/pages/shoppingCart.html">购物车</a>
+					<!--购物车下拉菜单-->
+					<div class="shopCarList">
+						<p>你的购物车暂时没有商品...</p>
+						<p>快去抢购良仓商品吧！</p>
+					</div>
+				</span>
+				<b>|</b>
+				<span class="msg">
+					<a href="#">消息</a>
+					<!--消息下拉菜单-->
+					<div class="msgList">
+						<a href="#">动态<s>0</s></a>
+						<a href="#">评论<s>0</s></a>
+						<a href="#">私信<s>0</s></a>
+						<a href="#">粉丝<s>0</s></a>
+						<a href="#">喜欢<s>0</s></a>
+						<a href="#">通知<s>0</s></a>
+					</div>
+				</span>
+				<b>|</b>
+				<span><a href="#">添加良品</a></span>
+			</div>
+		</div>
+	</header>
+	<nav class="margin clear">
+		<ul class="navTitle">
+			<li>
+				<a href="http://localhost:8000/pages/index.html" class="active homepage">首页</a>
+			</li>
+			<li class="subli shop">
+				<a href="#">商店</a>
+				<!--商店下拉菜单开始-->
+				<div class="shopList">
+					<div class="storeLeft">
+						<dl>
+							<!-- <dd>
+								<img src="../static/images/23687.png" alt="" />
+								<a href="#">商品</a>
+							</dd>
+							<dd>
+								<img src="../static/images/23687.png" alt="" />
+								<a href="#">商品</a>
+							</dd> -->
+						</dl>
+						<div class="checkAllShop">
+							<a href="#">查看所有品牌&gt;</a>
+							<a href="#">最新到货&gt;</a>
+						</div>
+					</div>
+					<div class="storeRight">
+						<a href="#">
+							<img src="../static/images/315574.jpg" alt="新视线" title="新视线" />
+							<p>新视线：2018-12-10</p>
+						</a>
+					</div>
+				</div>
+				<!--商店下拉菜单结束-->
+			</li>
+			<li class="subli magazine">
+				<a href="#">杂志</a>
+				<!--杂志的下拉菜单开始-->
+				<div class="magazineMsg">
+					<div class="magazineList">
+						<a href="#">趣物</a>
+						<a href="#">数码</a>
+						<a href="#">趣物</a>
+						<a href="#">数码</a>
+						<a href="#">趣物</a>
+						<a href="#">数码</a>
+						<a href="#">趣物</a>
+						<a href="#">数码</a>
+						<a href="#">趣物</a>
+					</div>
+				</div>
+				<!--杂志的下拉菜单结束-->
+			</li>
+			<li class="subli share">
+				<a href="#">分享</a>
+				<div class="shareMsg">
+					<!--分享下拉菜单-->
+					<div class="shareList">
+						<a href="#">趣物</a>
+						<a href="#">数码</a>
+						<a href="#">趣物</a>
+						<a href="#">数码</a>
+						<a href="#">趣物</a>
+						<a href="#">数码</a>
+						<a href="#">趣物</a>
+						<a href="#">数码</a>
+						<a href="#">趣物</a>
+					</div>
+					<!--分享二级菜单结束-->
+				</div>
+			</li>
+			<li>
+				<a href="#">达人</a>
+			</li>
+		</ul>
+		<!--搜索框-->
+		<div class="search-input clear">
+			<input type="text" name="" class="txt" value="" placeholder="search..." />
+			<input type="button" name="" class="btn" value="" />
+		</div>
+		<!--可以让输入框show和hide 的按钮-->
+		<b class="noOffmenu"></b>
+	</nav>
+</div>
+	<div class="ListData"></div>
+	<script type="text/javascript" src="../../scripts/libs/require.js" data-main="commonHtml.js"></script>

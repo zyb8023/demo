@@ -1,0 +1,92 @@
+<script type="text/html" id="goods">
+	<div class="goodsMsg">
+		<h4 class="title">
+						<a href="#">良仓</a>
+						<span>&gt;</span>
+						<a href="#">艺术</a>
+						<span>&gt;</span>
+						<a href="#">艺术</a>
+						<span>&gt;</span>
+						<a href="#"><%=goods.name%></a>
+					</h4>
+		<div class="details clear">
+			<!--图片展示-->
+			<div class="show">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="<%=goods.img%>" alt="" /></div>
+						<div class="swiper-slide"><img src="../static/images/good2.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="../static/images/good3.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="../static/images/good4.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="../static/images/good5.jpg" alt="" /></div>
+					</div>
+				</div>
+				<div class="swiper-button-prev swiper-button-black"></div>
+				<!--左箭头-->
+				<div class="swiper-button-next swiper-button-black"></div>
+				<!--右箭头-->
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--商品信息-->
+			<div class="msg">
+				<a href="#" class="like">
+					<b class="iconfont icon-xiangqu"></b>
+					<span>631</span>
+				</a>
+				<h3 class="shopName">
+								<a href="#">Space 18</a>
+							</h3>
+				<h4 class="goodName"><%= goods.name%></h4>
+				<div class="price">
+					<i>价格:</i>
+					<b><%=goods.skuprice%>元</b>
+				</div>
+				<div class="service clear">
+					<p>免运费</p>
+					<p>正品授权</p>
+				</div>
+				<!--颜色选择-->
+				<div class="goodscolor clear">
+					<i>颜色:</i>
+					<div class="colorList">
+						<div class="list click">
+							<img src="<%=goods.img%>" alt="" />
+							<span>圣诞树</span>
+						</div>
+						<div class="list">
+							<img src="../static/images/good2.jpg" alt="" />
+							<span>圣诞常青树</span>
+						</div>
+						<div class="list">
+							<img src="../static/images/good3.jpg" alt="" />
+							<span>骑摩托的圣诞老人</span>
+						</div>
+					</div>
+				</div>
+				<!--数量选择-->
+				<div class="count">
+					<i>数量:</i>
+					<a href="#" class="jian"></a>
+					<span class="num">1</span>
+					<a href="#" class="jia"></a>
+				</div>
+				<div class="coon">
+					<a href="#">立即购买</a>
+				</div>
+				<div class="add clear">
+					<a class="addCar" goodsId="<%=goods.skuid%>">加入购物车</a>
+					<a class="share">分享</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="goodsShow">
+		<img src="../static/images/goodsShow1.jpg" alt="" />
+		<img src="../static/images/goodsShow2.jpg" alt="" />
+		<img src="../static/images/goodsShow3.jpg" alt="" />
+		<img src="../static/images/goodsShow4.jpg" alt="" />
+		<img src="../static/images/goodsShow5.jpg" alt="" />
+		<img src="../static/images/goodsShow6.jpg" alt="" />
+		<img src="../static/images/goodsShow7.jpg" alt="" />
+	</div>
+</script>

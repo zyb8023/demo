@@ -16,24 +16,33 @@ gulp.task("buildJS", () => {
 
 	gulp.src("./src/scripts/libs/*.js")
 		.pipe(gulp.dest("./dist/scripts/libs"));
-	
+
 	gulp.src("./src/pages/*.js")
 		.pipe(babel({
 			presets: ['@babel/env']
 		}))
 		.pipe(uglify())
 		.pipe(gulp.dest("./dist/pages"));
+	gulp.src("./src/pages/commonHtml/*.js")
+		.pipe(babel({
+			presets: ['@babel/env']
+		}))
+		.pipe(uglify())
+		.pipe(gulp.dest("./dist/pages/commonHtml"));
+
 });
 //css的编译，压缩，转移
 gulp.task("buildCSS", () => {
 	gulp.src("./src/styles/*.scss")
-		.pipe(sass())
+		.pipe(sass().on('error', sass.logError))
 		.pipe(clean())
 		.pipe(gulp.dest("./dist/styles"));
 });
 //html的编译，压缩，转移
 gulp.task("buildHtml", () => {
-	gulp.src("./src/pages/*.html").pipe(gulp.dest("./dist/pages"))
+	gulp.src("./src/pages/*.html").pipe(gulp.dest("./dist/pages"));
+	gulp.src("./src/pages/templates/*.html").pipe(gulp.dest("./dist/pages/templates"));
+	gulp.src("./src/pages/commonHtml/*.html").pipe(gulp.dest("./dist/pages/commonHtml"));
 });
 
 //静态资源的压缩和转移
@@ -55,9 +64,9 @@ gulp.task("webserver", ["watching"], () => {
 	gulp.src("dist")
 		.pipe(webserver({
 			livereload: true, //是否支持热部署
-//			https: true,
+			//			https: true,
 		}));
 
 });
 
-gulp.task("build", ["buildJS", "buildCSS", "buildHtml","buildStatciDecoration"]);
+gulp.task("build", ["buildJS", "buildCSS", "buildHtml", "buildStatciDecoration"]);

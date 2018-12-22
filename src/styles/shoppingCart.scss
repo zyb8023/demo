@@ -1,0 +1,105 @@
+@import "_flex"; //导入的弹性盒兼容插件
+@import "reset"; //导入的公共样式
+@import "iconfont";
+.margin {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+div#main {
+    div.schedule {
+        text-align: center;
+        font: 14px "黑体";
+        padding-top: 64px;
+        color: #666;
+        span {
+            padding: 0 40px;
+        }
+        .active {
+            color: #6393B4;
+        }
+    }
+    table {
+        color: #666666;
+        font-size: 14px;
+        border-bottom: 1px solid #DDDDDD;
+        margin-top: 40px;
+        .quantity {
+            font-weight: 900;
+            a {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                font: 14px/15px "";
+                text-align: center;
+            }
+        }
+        img {
+            width: 70px;
+            height: 70px;
+        }
+        em {
+            display: block;
+            width: 40px;
+            height: 25px;
+            color: #6393B4;
+            cursor: pointer;
+        }
+    }
+    div#accounts {
+        text-align: center;
+        p {
+            font-size: 14px;
+            font-family: "黑体";
+            span.price {
+                font-size: 18px;
+                color: #6393B4;
+                font-weight: 900;
+            }
+        }
+        i {
+            display: block;
+            width: 168px;
+            height: 30px;
+            font: 14px/30px "";
+            text-align: center;
+            color: #FFFFFF;
+            background: #6393B4;
+            margin: 15px auto;
+            cursor: pointer;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            width: 200px;
+            margin: 0 auto;
+            legend {
+                width: 70px;
+                border: 0;
+            }
+            a {
+                font: 14px "";
+            }
+        }
+    }
+    div#catKong{
+        display: none;
+        width: 640px;
+        height: 280px;
+        box-shadow: 2px 2px 2px #999999;
+        margin: 120px auto 60px;
+        text-align: center;
+        padding-top: 30px;
+        img{
+            width: 150px;
+            height: 110px;
+        }
+        p{
+            font: 24px/2 "微软雅黑";
+            color: #999999;
+        }
+    }
+
+}

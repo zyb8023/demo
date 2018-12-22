@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>良仓-购物车</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/shoppingCart.css" />
+
+	<body>
+		<div id="header"></div>
+		<div id="main" class="margin">
+			<div class="schedule">
+				<i>|</i>
+				<span class="active">购物车</span>
+				<i>|</i>
+				<span>付款</span>
+				<i>|</i>
+			</div>
+			<table class="table tableCart"></table>
+			<div id="catKong">
+				<img src="../static/images/catKong.png" alt="">
+				<p>您的购物车还是空的！</p>
+			</div>
+			<div id="accounts">
+				<p>良品总价/<span class="priceTotal">￥0</span></p>
+				<i>立即结算</i>
+				<fieldset>
+					<legend>
+						<a href="#">继续购物</a>
+					</legend>
+
+				</fieldset>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+	<script src="../scripts/libs/require.js" type="text/javascript" charset="utf-8" data-main="shoppingCart.js"></script>
+
+</html>

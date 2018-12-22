@@ -1,0 +1,151 @@
+@import "reset";
+@import "_flex";
+@import "iconfont";
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+#registerbg {
+    height: 100%;
+    background: #999999;
+    ul {
+        width: 540px;
+        margin: 0 auto;
+        padding-top: 100px;
+        li {
+            padding: 10px 0;
+            h3 {
+                float: left;
+                width: 80px;
+                font: 14px/50px "";
+                height: 50px;
+                color: #F5F5F5;
+            }
+        }
+        li.logo {
+            padding: 20px 0;
+            a {
+                float: left;
+                text-align: center;
+                width: 320px;
+            }
+        }
+        li.usertel {
+            .usertelInput {
+                width: 320px;
+                @extend .input;
+            }
+        }
+        li.authCode {
+            .authCodeInput {
+                width: 225px;
+                @extend .input;
+            }
+            .codeImg {
+                float: left;
+                height: 50px;
+                padding-top: 7px;
+                margin-left: 20px;
+                span.code {
+                    float: left;
+                    width: 80px;
+                    height: 35px;
+                    font: 18px/35px "";
+                }
+                i {
+                    float: left;
+                    margin: 10px 0 0 5px;
+                }
+            }
+        }
+        li.userPwd {
+            .userPwdInput {
+                width: 320px;
+                @extend .input;
+            }
+            div.qiangdu {
+                float: left;
+                margin: 10px 0 0 20px;
+                p {
+                    width: 108px;
+                    @include flexbox;
+                    @include justify-content(space-between);
+                    i {
+                        height: 8px;
+                        width: 35px;
+                        border: 1px solid #F5F5F5;
+                    }
+                }
+                h4 {
+                    width: 108px;
+                    @include flexbox;
+                    @include justify-content(space-between);
+                    margin-left: 10px;
+                    i {
+                        width: 35px;
+                        font: 14px/2 "";
+                    }
+                }
+            }
+        }
+        li.reUserPwd {
+            .reUserPwdInput {
+                width: 320px;
+                @extend .input;
+            }
+        }
+        li.agree {
+            height: 50px;
+            .agreeInput {
+                float: left;
+                margin-top: 22px;
+            }
+            span {
+                float: left;
+                margin: 20px 3px 0 10px;
+            }
+            a {
+                float: left;
+                margin-top: 20px;
+            }
+        }
+        li.usersub {
+            #usersubInput {
+                width: 320px;
+                font: 900 18px/50px "";
+                border: 0;
+                background: #25292E;
+                color: #F5F5F5;
+            }
+        }
+        li.loginIcon {
+            div {
+                float: left;
+                a {
+                    font: 22px "";
+                    color: #F5F5F5;
+                }
+            }
+            a.login {
+                float: left;
+                font: 16px/24px "";
+                color: #F5F5F5;
+                border-bottom: 1px solid #F5F5F5;
+                margin-left: 140px;
+            }
+        }
+    }
+}
+
+.input {
+    float: left;
+    height: 50px;
+    border: 1px solid #CCCCCC;
+    background: #CCCCCC;
+    color: #F5F5F5;
+    padding: 0 20px;
+    font: 14px/50px "";
+    outline: medium;
+}

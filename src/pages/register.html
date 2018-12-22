@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>良仓-用户注册</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
+	<link rel="stylesheet" href="../styles/register.css" />
+
+	<body>
+		<div id="registerbg">
+			<form action="http://localhost:8000/pages/index.html" method="get">
+				<ul>
+					<li class="clear logo">
+						<h3></h3>
+						<a href="#">
+							<img src="https://www.iliangcang.com/images/default/logo_icon.png" alt="" />
+						</a>
+					</li>
+					<li class="clear usertel">
+						<h3>
+							手机号
+						</h3>
+						<input type="text" name="usertelInput"    autocomplete="off" class="usertelInput" placeholder="请输入手机号" />
+					</li>
+					<li class="clear authCode">
+						<h3>
+							验证码
+						</h3>
+						<input type="text" name="" class="authCodeInput" placeholder="输入验证码" />
+						<div class="codeImg">
+							<span class="code"></span>
+							<i>看不清，换一张</i>
+						</div>
+					</li>
+					<li class="clear userPwd">
+						<h3>
+							创建密码
+						</h3>
+						<input type="password" class="userPwdInput" placeholder="6-20位字符组成，区分大小写" />
+						<div class="qiangdu">
+							<p>
+								<i></i>
+								<i></i>
+								<i></i>
+							</p>
+							<h4>
+								<i>弱</i>
+								<i>中</i>
+								<i>强</i>
+							</h4>
+						</div>
+					</li>
+					<li class="clear reUserPwd">
+						<h3>
+							密码确认
+						</h3>
+						<input type="password" class="reUserPwdInput" placeholder="确认密码" />
+					</li>
+					<li class="clear agree">
+						<h3></h3>
+						<input type="checkbox" value="agree" class="agreeInput" checked />
+						<span>同意</span>
+						<a href="#">良仓注册条款</a>
+					</li>
+					<li class="clear usersub">
+						<h3></h3>
+						<input type="submit" id="usersubInput" value="立即注册" />
+					</li>
+					<li class="clear loginIcon">
+						<h3></h3>
+						<div>
+							<a href="#" class="qq iconfont icon-QQ"></a>
+							<a href="#" class="weibo iconfont icon-weibo"></a>
+							<a href="#" class="douban iconfont icon-douban"></a>
+							<a href="#" class="qqWeibo iconfont icon-tengxunweibo"></a>
+						</div>
+						<a href="#" class="login">登录良仓</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</body>
+	<script src="../scripts/libs/require.js" type="text/javascript" data-main="register.js"></script>
+
+</html>
